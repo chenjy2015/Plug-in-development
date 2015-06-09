@@ -20,13 +20,7 @@ PulgLibrary.jar中包含了assets文件夹 里面包含了资源文件 所有资源的引用都是在asset
 (2)注册PulgLibrary.jar 中所用到的Activity或者broadcast或者service等需要注册的界面或者权限
 (3)测试调用PulgLibrary.jar中的功能 测试通过！
 
-
-
-
-
-
 PulgLibrary_Code.jar 为混淆过后的jar包
-
 
 网上资料颇多，有4种方式 但是只有两种方式比较适合正在抉择中 其中两种方式各有优缺点 都不完美
 第一种：将src中的代码打包成jar包 然后将res中的资源文件在另外拷贝至测试工程 
@@ -39,3 +33,10 @@ PulgLibrary_Code.jar 为混淆过后的jar包
 缺点：因为是在assets中引用资源 所以不能采用Android提供的R.文件来引用 且View都是自定义（个人做法）在复杂的布局中 编程稍微麻烦一点
 
 以上两个方法都可以混淆代码 以实现代码安全性
+-----------------------------------------------
+
+
+librarycode.jar   第一种：动态生成View
+librarycode_1.jar  第二种：反射形式获取资源文件
+
+
